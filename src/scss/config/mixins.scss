@@ -1,0 +1,10 @@
+@use "sass:math";
+@import "functions";
+
+// !обрезает текст до определенного кол-ва строк, остаток заменяет на 3 точки (...)
+@mixin line-clamp($value) {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: block-axis;
+	-webkit-line-clamp: $value;
+}

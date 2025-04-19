@@ -1,0 +1,17 @@
+@use "sass:math";
+@import "config/vars.scss";
+@import "config/fonts";
+@import "config/root";
+@import "config/mixins";
+@import "config/reset";
+@import "config/scrollbar";
+@import "config/base";
+
+// ui
+@import "./ui/**/*.scss";
+
+// sections
+@import "./sections/**/*.scss";
+
+// components
+@import "./components/**/*.scss";
