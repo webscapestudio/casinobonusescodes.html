@@ -78,6 +78,7 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
+		"@corgras/readmore-js": "^2.2.0",
 		"micromodal": "^0.4.10",
 		"swiper": "^8.4.5"
 	}

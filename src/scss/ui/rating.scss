@@ -1,0 +1,34 @@
+.rating {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+
+	&.sm {
+		svg {
+			display: block;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+.rating-star {
+	&.filled {
+		svg {
+			fill: #ffd700;
+		}
+	}
+	svg {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.rating {
+		svg {
+			display: block;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

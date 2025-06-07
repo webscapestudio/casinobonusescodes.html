@@ -1,6 +1,6 @@
 export const burger = () => {
 	const burger = document.querySelector(".burger");
-	const nav = document.querySelector(".navigation-mob");
+	const nav = document.querySelector(".mobile-menu");
 
 	burger.addEventListener("click", () => {
 		if (burger.classList.contains("active")) {

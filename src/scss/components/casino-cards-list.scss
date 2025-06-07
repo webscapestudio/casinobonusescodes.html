@@ -1,0 +1,49 @@
+.casino-cards-list {
+	margin-top: 80px;
+
+	.hr {
+		margin: 16px 0;
+	}
+}
+
+.casino-cards-list__wrap {
+	margin-top: 40px;
+}
+
+.casino-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	background: #1a1a1b;
+	align-items: center;
+	padding: 8px 16px 8px 8px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.casino-row__img {
+	width: 64px;
+	height: auto;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.casino-row__right {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	.btn {
+		width: 120px;
+		padding: 12px;
+	}
+}
+
+.casino-row__left {
+	display: flex;
+	flex-direction: column;
+}

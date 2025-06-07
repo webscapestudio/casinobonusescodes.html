@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/components/head.html', { 'title': 'Casino' })
+	<body>
+		@@include('html/components/header.html')
+
+		<main class="">
+			<div class="container">
+				<div class="main-wrap">
+					<div>
+						@@include('html/components/bonus-card.html', { 'title': 'Casino' })
+
+						<section class="casino-reply">
+							<h2 class="h3 casino-reply-title">Leave a reply</h2>
+
+							<form action="" class="casino-reply-form">
+								<input type="text" placeholder="Name" />
+								<input type="email" placeholder="Email" />
+								<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+								<button class="btn outlined">Leave a comment</button>
+							</form>
+						</section>
+
+						<!--  -->
+					</div>
+					<!--  -->
+
+					<!-- Aside -->
+					@@include('html/components/aside.html')
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		@@include('html/components/subscribe.html')
+		<!-- Footer -->
+		@@include('html/components/footer.html')
+	</body>
+</html>

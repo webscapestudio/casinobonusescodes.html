@@ -1,0 +1,36 @@
+.affiliate-disclosure {
+	margin-top: 16px;
+	background: #1a1a1b;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.affiliate-disclosure-link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 500;
+	color: $primary;
+	margin-top: 8px;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.affiliate-disclosure {
+		padding: 12px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.affiliate-disclosure {
+		padding: 12px;
+		p {
+			font-size: 14px;
+			line-height: 150%;
+		}
+	}
+}

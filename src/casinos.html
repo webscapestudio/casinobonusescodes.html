@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/components/head.html', { 'title': 'Главная' })
+	<body>
+		@@include('html/components/header.html')
+
+		<main class="">
+			<div class="container">
+				<div class="main-wrap">
+					<div>
+						<section class="index-page-hero casino-page-hero">
+							<div class="top-title-item">
+								<h1 class="h1">H1 для страницы Казино.</h1>
+								<p class="top-title-counter">(2 new today)</p>
+							</div>
+
+							<!-- Affiliate disclosure -->
+							@@include('html/components/affiliate.html')
+							<!--  -->
+						</section>
+						@@include('html/components/bonus-comp.html')
+						<!--  -->
+						@@include('html/components/casino-comp.html')
+						<!--  -->
+						@@include('html/components/casino-comp.html')
+						<!--  -->
+						@@include('html/components/casino-comp.html')
+						<!--  -->
+						@@include('html/components/casino-cards-list.html')
+
+						<!-- Bonus Card List End -->
+						@@include('html/components/text-section.html')
+
+						<!-- Bonus Card List End -->
+					</div>
+					<!--  -->
+
+					<!-- Aside -->
+					@@include('html/components/aside.html')
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		@@include('html/components/subscribe.html')
+		<!-- Footer -->
+		@@include('html/components/footer.html')
+	</body>
+</html>

@@ -1,0 +1,70 @@
+.input {
+	border-radius: 8px;
+	padding: 16px 20px;
+	font-size: 16px;
+	line-height: 110%;
+	color: #fff;
+
+	&::placeholder {
+		line-height: 110%;
+	}
+}
+
+input,
+textarea {
+	background: #111010;
+	border-radius: 8px;
+	padding: 11px 20px;
+	border: 1px solid #111010;
+	font-size: 16px;
+	line-height: 110%;
+	color: #fff;
+	font-family: inherit;
+
+	&::placeholder {
+		line-height: 110%;
+	}
+}
+
+textarea {
+	resize: vertical;
+}
+
+.input-label {
+	display: flex;
+	flex-direction: column;
+	span {
+		font-weight: 700;
+		line-height: 1.1;
+		margin-bottom: 8px;
+	}
+
+	&.error {
+		span {
+			color: $red;
+		}
+
+		.input {
+			border: 1px solid $red;
+		}
+	}
+}
+
+.error-message {
+	font-size: 14px;
+	color: $red;
+	margin-top: 4px;
+}
+
+@media screen and (max-width: 768px) {
+	.input-label {
+		span {
+			font-size: 14px;
+		}
+	}
+
+	.input {
+		padding: 16px;
+		border-radius: 4px;
+	}
+}

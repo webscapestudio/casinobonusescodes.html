@@ -5,15 +5,24 @@ body {
 	font-family: "Manrope", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 140%;
-	color: $text-black;
+	line-height: 150%;
+	color: #fff;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
+	// background: $bg-color;
+	background: #070708;
 }
 
 main {
 	flex-grow: 1;
+}
+
+button,
+input {
+	font-size: inherit;
+	color: inherit;
 }
 
 .container {
@@ -24,5 +33,43 @@ main {
 	max-width: $container;
 }
 
-.section {
+.main-wrap {
+	margin-top: 32px;
+	display: grid;
+	grid-template-columns: 1fr 348px;
+	gap: 24px;
+	align-items: start;
+}
+
+.gray {
+	color: rgba(#fff, 0.5);
+}
+
+.green {
+	color: #00ff00;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.yellow {
+	color: #ffff00;
+}
+
+.showmore-btn {
+	display: inline-block;
+	margin-top: 16px;
+	color: $primary;
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		padding: 0 15px;
+	}
+
+	.main-wrap {
+		grid-template-columns: 1fr;
+		gap: 0px;
+	}
 }

@@ -1,0 +1,22 @@
+.search-results-list {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.search-result-item__wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.search-results-item {
+	border-radius: 8px;
+}
+
+.search-results-list__wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}

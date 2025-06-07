@@ -1,0 +1,290 @@
+.casino-comp {
+	margin-top: 40px;
+	background: #1a1a1b;
+	border-radius: 8px;
+}
+.casino-comp__header {
+	padding: 16px 16px;
+	display: flex;
+	align-items: center;
+}
+
+.casino-comp__title {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.casino-comp__title_info {
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.casino-comp-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.casino-comp__logo {
+	width: 64px;
+	height: auto;
+	flex-shrink: 0;
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.casino-comp-item {
+	padding: 12px 16px;
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	background: #252525;
+	border-bottom: 1px solid #111010;
+}
+
+.casino-comp-item__left {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.casino-comp-item__btns {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	.btn {
+		width: 120px;
+		padding: 12px;
+	}
+}
+
+.casino-comp-item__title {
+	font-weight: 500;
+	font-size: 18px;
+	width: 220px;
+	line-height: 140%;
+}
+
+.casino-bonus-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.casino-bonus {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+
+	&.exclusive {
+		.casino-bonus__text {
+			background: rgba($green, 0.2);
+			border: 1px solid $green;
+
+			&:hover {
+				background: $green;
+			}
+		}
+	}
+}
+
+.casino-bonus__text {
+	color: #fff;
+	padding: 5px 16px;
+	border-radius: 1000px;
+	background: rgba($primary, 0.2);
+	border: 1px solid $primary;
+	transition: all 0.3s ease;
+	&:hover {
+		background: $primary;
+	}
+}
+
+.casino-bonus__tooltip {
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 50%;
+	transform: translateX(-50%) scale(0.95);
+	opacity: 0;
+	width: 450px;
+	visibility: hidden;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	z-index: 100;
+}
+
+.casino-bonus.active .casino-bonus__tooltip {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(-50%) scale(1);
+}
+
+/* Popup */
+.bonus-popup {
+	background: #1a1a1b;
+	color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	position: relative;
+}
+
+/* Кнопка закрытия */
+.bonus-popup__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 32px;
+	height: 32px;
+	background: #fff;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.bonus-popup__close::before,
+.bonus-popup__close::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 18px;
+	height: 2px;
+	background: #fff;
+	transform-origin: center;
+}
+
+.bonus-popup__close::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.bonus-popup__close::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.bonus-popup__title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.bonus-popup__code {
+	padding: 10px 14px;
+	border-radius: 6px;
+	margin-bottom: 16px;
+	display: flex;
+	gap: 8px;
+}
+
+.bonus-popup__code-label {
+	font-weight: 600;
+}
+
+.bonus-popup__code-value {
+}
+
+.bonus-popup__details {
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+
+.bonus-popup__row {
+	display: flex;
+	gap: 12px;
+	margin-bottom: 8px;
+	flex-wrap: wrap;
+}
+
+.bonus-popup__term {
+	width: 100px;
+	font-weight: 600;
+	// color: #555;
+}
+
+.bonus-popup__definition {
+	flex: 1;
+}
+
+.bonus-popup__note {
+	font-size: 13px;
+	color: #666;
+}
+
+.casino-row__left_btns {
+	margin-top: 8px;
+	display: flex;
+	align-items: center;
+	gap: 32px;
+
+	svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.bonus-comp-item__label {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: -20px;
+			transform: translateY(-50%);
+			width: 8px;
+			border-radius: 100%;
+			height: 8px;
+			background: #666;
+		}
+
+		&:first-child::before {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.casino-comp-item {
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.casino-comp-item__btns {
+		width: auto;
+	}
+
+	.casino-comp-item__left {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.casino-comp-item__btns {
+		width: 100%;
+		margin-left: auto;
+	}
+
+	.casino-comp__header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.casino-comp-item__btns {
+		width: 100%;
+
+		.btn {
+			width: 100%;
+		}
+	}
+
+	// .casino-bonus__tooltip {
+	// 	width: 320px;
+	// }
+}
+/* Оверлей */

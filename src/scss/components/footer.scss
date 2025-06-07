@@ -1,0 +1,89 @@
+.footer {
+	margin-top: 80px;
+	padding: 40px 0 0 0;
+	background: #252525;
+}
+
+.footer-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-top-nav {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	a {
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+.footer-hr {
+	margin: 16px 0;
+}
+
+.footer-copy {
+	padding: 6px 0;
+	background: $bg-color;
+	color: $text-gray;
+	font-size: 14px;
+}
+
+.gamble-aware-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	max-width: 840px;
+	margin: 24px auto 0;
+}
+
+.gamble-aware-block__logos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+.gamble-aware-block__logo {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	img {
+		width: 180px;
+		height: 40px;
+		object-fit: cover;
+	}
+}
+
+.gamble-aware-block__text {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.logo-black-age {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: $bg-card;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $text-gray;
+	-webkit-background-size: 40px 40px;
+	background-size: 40px 40px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.gamble-aware-block__links {
+	display: flex;
+	gap: 32px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 16px;
+}

@@ -1,0 +1,78 @@
+.subscribe-section {
+	margin-top: 80px;
+	padding: 32px;
+	border-radius: 8px;
+	background: #252525;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subscribe-section__title {
+	text-align: center;
+}
+
+.subscribe-section__text {
+	text-align: center;
+	margin-top: 8px;
+	max-width: 760px;
+}
+
+.subscribe-section__form {
+	margin-top: 20px;
+	display: flex;
+	max-width: 560px;
+	width: 100%;
+	gap: 8px;
+	.input {
+		padding: 16px 20px;
+		width: 100%;
+	}
+}
+
+.input {
+}
+
+.btn primary {
+}
+
+.form-policy-text {
+	font-size: 14px;
+	margin-top: 8px;
+	color: $text-gray;
+	line-height: 150%;
+	max-width: 400px;
+	text-align: center;
+
+	a {
+		color: $primary;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.subscribe-section {
+		padding: 24px;
+	}
+
+	.subscribe-section__text {
+		font-size: 14px;
+		line-height: 140%;
+		margin-top: 8px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.subscribe-section {
+		padding: 16px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.subscribe-section__form {
+		flex-direction: column;
+	}
+}

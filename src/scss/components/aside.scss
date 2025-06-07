@@ -1,0 +1,50 @@
+.aside {
+	background: #1a1a1b;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.aside-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.showmore-link {
+	color: $primary;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	line-height: 1.1;
+	font-weight: 500;
+	margin-top: 16px;
+	transition: all 0.2s ease;
+	&:hover {
+		color: $primary-hover;
+	}
+}
+
+.aside-hr {
+	margin: 0px 0;
+}
+
+.aside-item__input {
+	width: 100%;
+	border-radius: 8px;
+	padding: 16px;
+	margin-top: 16px;
+}
+
+.aside-list {
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+	.aside {
+		display: none;
+	}
+}

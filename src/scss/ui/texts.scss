@@ -1,0 +1,117 @@
+.h1 {
+	font-size: 32px;
+	line-height: 120%;
+	font-weight: 700;
+}
+
+.h2 {
+	font-weight: 700;
+	line-height: 120%;
+	font-size: 26px;
+}
+
+.h3 {
+}
+
+.h4 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.text-descr {
+	color: rgba(#fff, 0.8);
+}
+
+.text-wrap {
+	margin-top: 20px;
+
+	&.text-wrap-page {
+		margin-top: 24px;
+	}
+
+	p {
+		margin-bottom: 16px;
+	}
+
+	a {
+		color: $primary;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	ul,
+	ol {
+		margin: 16px 0;
+		padding-left: 20px;
+		list-style: none;
+
+		li {
+			margin-bottom: 8px;
+			position: relative;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&::before {
+				content: counter(item) ".";
+				counter-increment: item;
+				position: absolute;
+				left: -20px;
+				color: $primary;
+			}
+		}
+	}
+
+	ol {
+		counter-reset: item;
+	}
+
+	ul li::before {
+		content: "•";
+		counter-reset: none;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 24px;
+		margin-bottom: 16px;
+		font-weight: bold;
+		line-height: 1.2;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.h1 {
+		font-size: 28px;
+		line-height: 120%;
+		font-weight: 700;
+	}
+
+	.h2 {
+		font-weight: 700;
+		line-height: 120%;
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.h1 {
+		font-size: 24px;
+		line-height: 120%;
+		font-weight: 700;
+	}
+
+	.h2 {
+		font-weight: 700;
+		line-height: 120%;
+		font-size: 20px;
+	}
+}

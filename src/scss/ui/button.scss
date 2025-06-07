@@ -1,0 +1,92 @@
+.btn {
+	display: inline-block;
+	padding: 16px 24px; // 0.75rem = 12px, 1.5rem = 24px
+	font-size: 16px; // 1rem = 16px
+	text-align: center;
+	line-height: 110%;
+	text-decoration: none;
+	border: none;
+	border-radius: 8px; // 0.25rem = 4px
+	cursor: pointer;
+	border: 1px solid inherit;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Primary button
+.btn.primary {
+	background-color: $primary;
+	color: #fff;
+
+	&:hover {
+		background-color: $primary-hover;
+	}
+}
+
+// Secondary button
+.btn.secondary {
+	background-color: #6c757d;
+	color: #fff;
+
+	&:hover {
+		background-color: #5a6268;
+	}
+}
+
+// Success button
+.btn.success {
+	background-color: #28a745;
+	color: #fff;
+
+	&:hover {
+		background-color: #218838;
+	}
+}
+
+// Danger button
+.btn.danger {
+	background-color: #dc3545;
+	color: #fff;
+
+	&:hover {
+		background-color: #c82333;
+	}
+}
+
+// Disabled button
+.btn.disabled {
+	background-color: #e0e0e0;
+	color: #6c757d;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+// Outlined button
+.btn.outlined {
+	background-color: transparent;
+	border: 1px solid currentColor;
+	color: $primary;
+	background: rgba($primary, 0.2);
+
+	&:hover {
+		background-color: $primary;
+		color: #fff;
+		border: 1px solid $primary;
+	}
+}
+
+// Size classes
+.btn.sm {
+	padding: 12px 24px; // 0.5rem = 8px, 1rem = 16px
+}
+
+.sort-button {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	line-height: 110%;
+	transition: all 0.2s ease;
+	&:hover {
+		color: $primary;
+	}
+}
